@@ -21,93 +21,297 @@
   </head>
   <body>
     <!-- Nav Bar -->
-    <nav id="nav-bar">
-      <div class="nav-bar__logo">
-        <img
-          class="nav-bar__image"
-          src="../img/86x85favicon.png"
-          alt="logo image"
-        />
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <img src="../img/86x85favicon.png" alt="" class="logo">
         <a href="#">Han</a>
       </div>
-      <ul class="nav-bar__menu">
-        <li class="nav-bar__menu-item">Home</li>
-        <li class="nav-bar__menu-item">About</li>
-        <li class="nav-bar__menu-item">Skills</li>
-        <li class="nav-bar__menu-item">My work</li>
-        <li class="nav-bar__menu-item">Testimonial</li>
-        <li class="nav-bar__menu-item">Contact</li>
+      <ul class="navbar__menu">
+        <li class="menu__item">
+          <button class="menu__btn">Home</button>
+        </li>
+        <li class="menu__item">
+          <button class="menu__btn">About</button>
+        </li>
+        <li class="menu__item">
+          <button class="menu__btn">Skills</button>
+        </li>
+        <li class="menu__item">
+          <button class="menu__btn">My work</button>
+        </li>
+        <li class="menu__item">
+          <button class="menu__btn">Testimonial</button>
+        </li>
+        <li class="menu__item">
+          <button class="menu__btn">Contact</button>
+        </li>
       </ul>
     </nav>
+
     <!-- Home -->
     <section id="home">
-      <img src="../img/profile.jpg" alt="" class="home__avatar" />
-      <h1 class="home__title">Hello, <br />I'm Han</h1>
-      <h2 class="home__description">
-        A Student studying Front-end web development
+      <img
+        src="../img/profile.jpg"
+        alt="Han's profile image"
+        class="home__profile"
+      />
+      <h1 class="title title--whiten">Hello, <br />I'm Dream Coder</h1>
+      <h2 class="description description--whiten">
+        A student who is ready to grow as a Front-end developer
       </h2>
       <button class="home__contact">CONTACT ME</button>
     </section>
+
     <!-- About Me -->
     <section id="about">
-      <h1 class="about__title">About me</h1>
-      <p class="home__description">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum quasi
-        deleniti pariatur. Eos officia dolores voluptatibus doloribus animi
-        possimus non magnam aut. Nisi neque velit nesciunt officiis consequuntur
-        ut mollitia.
+      <h1>About me</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        doloribus recusandae, temporibus, eos ipsum, laboriosam non corporis
+        totam suscipit maxime debitis ut sequi hic dolorem ullam omnis! Ex, nemo
+        facilis?
       </p>
-      <ul class="about__spec">
-        <li class="about__spec-item">
-          <i class="about__spec-image fab fa-html5"></i>
-          <span class="about__spec-type">Front-end</span>
-          <span class="about__spec-name"
-            >HTML, CSS, JavaScript, TypeScript, React, Web APIs</span
-          >
+      <ul class="about__majors">
+        <li class="major">
+          <i class="fab fa-html5"></i>
+          <h2 class="major__title">Front-end</h2>
+          <h3 class="major__description">
+            HTML, CSS, JavaScript, TypeScript, React, Vue, Web Apis
+          </h3>
         </li>
-        <li class="about__spec-item">
-          <i class="about__spec-image fab fa-html5"></i>
-          <span class="about__spec-type">Front-end</span>
-          <span class="about__spec-name"
-            >HTML, CSS, JavaScript, TypeScript, React, Web APIs</span
-          >
+        <li class="major">
+          <i class="fab fa-html5"></i>
+          <h2 class="major__title">Front-end</h2>
+          <h3 class="major__description">
+            HTML, CSS, JavaScript, TypeScript, React, Vue, Web Apis
+          </h3>
         </li>
-        <li class="about__spec-item">
-          <i class="about__spec-image fab fa-html5"></i>
-          <span class="about__spec-type">Front-end</span>
-          <span class="about__spec-name"
-            >HTML, CSS, JavaScript, TypeScript, React, Web APIs</span
-          >
+        <li class="major">
+          <i class="fab fa-html5"></i>
+          <h2 class="major__title">Front-end</h2>
+          <h3 class="major__description">
+            HTML, CSS, JavaScript, TypeScript, React, Vue, Web Apis
+          </h3>
         </li>
       </ul>
       <ul class="about__career">
-        <li class="about__career-item">
-          <img src="../img/KNU.jpg" alt="" class="about__career-image" />
-          <div class="about__career-description">
-            <span class="about__career-place"
-              >KYUNGPOOK NATIONAL UNIVERSITY</span
-            >
-            <span class="about__career-term">2015 Mar - 2022 Feb</span>
+        <li class="career">
+          <img src="../img/KNU.jpg" alt="" class="career__logo" />
+          <div class="career__description">
+            <span class="career__name">KYUNGPOOK NATIONAL UNIVERSITY</span>
+            <span class="career__period">2015 Mar - 2022 Feb</span>
           </div>
         </li>
-        <li class="about__career-item">
-          <img src="../img/KNU.jpg" alt="" class="about__career-image" />
-          <div class="about__career-description">
-            <span class="about__career-place"
-              >KYUNGPOOK NATIONAL UNIVERSITY</span
-            >
-            <span class="about__career-term">2015 Mar - 2022 Feb</span>
+        <li class="career">
+          <img src="../img/KNU.jpg" alt="" class="career__logo" />
+          <div class="career__description">
+            <span class="career__name">KYUNGPOOK NATIONAL UNIVERSITY</span>
+            <span class="career__period">2015 Mar - 2022 Feb</span>
           </div>
         </li>
       </ul>
     </section>
+
     <!-- Skills -->
-    <section id="skills"></section>
+    <section id="skills">
+      <h1>Skills</h1>
+      <h2>Skills & Attributes</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At sequi porro
+        iure facere similique commodi ut harum? Eum ex rem iste ducimus sit
+        commodi, optio itaque quos, iusto, facere tenetur?
+      </p>
+      <div class="skillset">
+        <div class="skillset-left">
+          <div class="skillset__title">Skills</div>
+          <ul class="skillset__list">
+            <li class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>99%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style:"99%"></div>
+              </div>
+            </li>
+            <li class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style:"90%"></div>
+              </div>
+            </li>
+            <li class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style:"90%"></div>
+              </div>
+            </li>
+            <li class="skill">
+              <div class="skill__description">
+                <span>TypeScript</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style:"80%"></div>
+              </div>
+            </li>
+            <li class="skill">
+              <div class="skill__description">
+                <span>React</span>
+                <span>88%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style:"88%"></div>
+              </div>
+            </li>
+            <li class="skill">
+              <div class="skill__description">
+                <span>Node.js</span>
+                <span>77%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style:"77%"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="skillset-right">
+          <div class="tools">
+            <div class="skillset__title">Tools</div>
+            <ul class="tools__list">
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Visual Studio Code</span></li>
+            </ul>
+          </div>
+          <div class="etc">
+            <div class="skillset__title">Etc</div>
+            <ul class="etc__list">
+              <li><span>Git</span></li>
+              <li><span>Git</span></li>
+              <li><span>Git</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- My Works -->
-    <section id="works"></section>
+    <section id="work">
+      <h1>My work</h1>
+      <h3>Projects</h3>
+      <ul class="work__categories">
+        <li class="category">
+          <button class="category__btn">All
+            <span class="category__count">8</span>
+          </button>
+        </li>
+        <li class="category">
+          <button class="category__btn">Front-end
+            <span class="category__count">3</span>
+          </button>
+        </li>
+        <li class="category">
+          <button class="category__btn">Front-end
+            <span class="category__count">3</span>
+          </button>
+        </li>
+        <li class="category">
+          <button class="category__btn">Front-end
+            <span class="category__count">2</span>
+          </button>
+        </li>
+      </ul>
+      
+      <ul class="work__projects">
+        <li class="project">
+          <a href="#" class="project__link">
+            <img src="../img/logo.png" alt="" class="project__image">
+          </a>
+        </li>
+        <li class="project">
+          <a href="#" class="project__link">
+            <img src="../img/logo.png" alt="" class="project__image">
+          </a>
+        </li>
+        <li class="project">
+          <a href="#" class="project__link">
+            <img src="../img/logo.png" alt="" class="project__image">
+          </a>
+        </li>
+        <li class="project">
+          <a href="#" class="project__link">
+            <img src="../img/logo.png" alt="" class="project__image">
+          </a>
+        </li>
+        <li class="project">
+          <a href="#" class="project__link">
+            <img src="../img/logo.png" alt="" class="project__image">
+          </a>
+        </li>
+        <li class="project">
+          <a href="#" class="project__link">
+            <img src="../img/logo.png" alt="" class="project__image">
+          </a>
+        </li>
+        <li class="project">
+          <a href="#" class="project__link">
+            <img src="../img/logo.png" alt="" class="project__image">
+          </a>
+        </li>
+        <li class="project">
+          <a href="#" class="project__link">
+            <img src="../img/logo.png" alt="" class="project__image">
+          </a>
+        </li>
+      </ul>
+    </section>
+
     <!-- Testimonials -->
-    <section id="testimonials"></section>
+    <section id="testimonials">
+      <h1>Testimonials</h1>
+      <h3>See what they say about me</h3>
+      <ul class="testimonials">
+        <li class="testimonial">
+          <img src="../img/obama.jpg" alt="" class="testimonial__avatar">
+          <div class="testimonial__speech-bubble">
+            <p class="speech-bubble__speech">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis aliquid voluptates saepe ratione ipsam, nostrum officia odio impedit ex dolorum error consectetur esse et unde dolor? Id, consequatur quos.</p>
+            <p class="speech-bubble__name"><a href="#">Obama</a>White House</p>
+          </div>
+        </li>
+        <li class="testimonial">
+          <img src="../img/obama.jpg" alt="" class="testimonial__avatar">
+          <div class="testimonial__speech-bubble">
+            <p class="speech-bubble__speech">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis aliquid voluptates saepe ratione ipsam, nostrum officia odio impedit ex dolorum error consectetur esse et unde dolor? Id, consequatur quos.</p>
+            <p class="speech-bubble__name"><a href="#">Obama</a>White House</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
     <!-- Contact -->
-    <section id="contact"></section>
+    <section id="contact">
+      <h1 class="title title--whiten">Let's talk</h1>
+      <h2 class="description description--whiten">dikum98@naver.com</h2>
+      <ul class="contact__links">
+        <li class="contact__link">
+          <a href="#"><i class="fab fa-github"></i></a>
+        </li>
+        <li class="contact__link">
+        <a href="#"><i class="fa fa-linkedin-square"></i></a>
+        </li>
+      </ul>
+      <p class="contasct__rights">2022 dikum98@naver.com - All rights reserved</p>
+    </section>
   </body>
 </html>
