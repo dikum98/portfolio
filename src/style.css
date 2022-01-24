@@ -106,13 +106,20 @@ p {
 
 /* Nav Bar */
 #navbar {
-  background-color: var(--color-light-violet);
+  background-color: transparent;
   position: fixed;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 12px;
+  transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-light-violet);
+  padding: 8px;
 }
 
 .navbar__logo {
@@ -135,7 +142,7 @@ p {
   width: 100%;
 }
 
-.menu__item.active {
+.menu__btn.active {
   outline: 1px solid var(--color-white);
   border-radius: var(--size-border-radius);
   background-color: var(--color-pink);
