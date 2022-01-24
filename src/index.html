@@ -23,12 +23,12 @@
     <!-- Nav Bar -->
     <nav id="navbar">
       <div class="navbar__logo">
-        <img src="../img/86x85favicon.png" alt="" class="logo">
+        <i class="fas fa-fire-alt logo"></i>
         <a href="#">Han</a>
       </div>
       <ul class="navbar__menu">
         <li class="menu__item">
-          <button class="menu__btn">Home</button>
+          <button class="menu__btn active">Home</button>
         </li>
         <li class="menu__item">
           <button class="menu__btn">About</button>
@@ -46,10 +46,11 @@
           <button class="menu__btn">Contact</button>
         </li>
       </ul>
+      <button class="navbar__toggle-btn"><i class="fas fa-bars"></i></button>
     </nav>
 
     <!-- Home -->
-    <section id="home">
+    <section id="home" class="section">
       <img
         src="../img/profile.jpg"
         alt="Han's profile image"
@@ -57,250 +58,321 @@
       />
       <h1 class="title title--whiten">Hello, <br />I'm Dream Coder</h1>
       <h2 class="description description--whiten">
-        A student who is ready to grow as a Front-end developer
+        프론트엔드 개발자가 되기 위해 공부중입니다.
       </h2>
       <button class="home__contact">CONTACT ME</button>
     </section>
 
     <!-- About Me -->
-    <section id="about">
-      <h1>About me</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-        doloribus recusandae, temporibus, eos ipsum, laboriosam non corporis
-        totam suscipit maxime debitis ut sequi hic dolorem ullam omnis! Ex, nemo
-        facilis?
-      </p>
-      <ul class="about__majors">
-        <li class="major">
-          <i class="fab fa-html5"></i>
-          <h2 class="major__title">Front-end</h2>
-          <h3 class="major__description">
-            HTML, CSS, JavaScript, TypeScript, React, Vue, Web Apis
-          </h3>
-        </li>
-        <li class="major">
-          <i class="fab fa-html5"></i>
-          <h2 class="major__title">Front-end</h2>
-          <h3 class="major__description">
-            HTML, CSS, JavaScript, TypeScript, React, Vue, Web Apis
-          </h3>
-        </li>
-        <li class="major">
-          <i class="fab fa-html5"></i>
-          <h2 class="major__title">Front-end</h2>
-          <h3 class="major__description">
-            HTML, CSS, JavaScript, TypeScript, React, Vue, Web Apis
-          </h3>
-        </li>
-      </ul>
-      <ul class="about__career">
-        <li class="career">
-          <img src="../img/KNU.jpg" alt="" class="career__logo" />
-          <div class="career__description">
-            <span class="career__name">KYUNGPOOK NATIONAL UNIVERSITY</span>
-            <span class="career__period">2015 Mar - 2022 Feb</span>
-          </div>
-        </li>
-        <li class="career">
-          <img src="../img/KNU.jpg" alt="" class="career__logo" />
-          <div class="career__description">
-            <span class="career__name">KYUNGPOOK NATIONAL UNIVERSITY</span>
-            <span class="career__period">2015 Mar - 2022 Feb</span>
-          </div>
-        </li>
-      </ul>
+    <section id="about" class="section">
+      <div class="section__container">
+        <h1>About me</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          doloribus recusandae, temporibus, eos ipsum, laboriosam non corporis
+          totam suscipit maxime debitis ut sequi hic dolorem ullam omnis! Ex,
+          nemo facilis? Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Deserunt aut ipsam doloremque quos neque odio eligendi eveniet?
+          Enim optio possimus officia repellendus nostrum repellat magni neque
+          delectus, ipsa, corporis voluptate.
+        </p>
+        <ul class="about__majors">
+          <li class="major">
+            <div class="major__img">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h2 class="major__title">Front-end</h2>
+            <h3 class="major__description">
+              HTML, CSS, JavaScript, TypeScript, React, Vue, Web Apis
+            </h3>
+          </li>
+          <li class="major">
+            <div class="major__img">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h2 class="major__title">Front-end</h2>
+            <h3 class="major__description">
+              HTML, CSS, JavaScript, TypeScript, React, Vue, Web Apis
+            </h3>
+          </li>
+          <li class="major">
+            <div class="major__img">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h2 class="major__title">Front-end</h2>
+            <h3 class="major__description">
+              HTML, CSS, JavaScript, TypeScript, React, Vue, Web Apis
+            </h3>
+          </li>
+        </ul>
+        <ul class="about__career">
+          <li class="career">
+            <img src="../img/KNU.jpg" alt="" class="career__logo" />
+            <div class="career__description">
+              <span class="career__name">KYUNGPOOK NATIONAL UNIVERSITY</span>
+              <span class="career__period">2015 Mar - 2022 Feb</span>
+            </div>
+          </li>
+          <li class="career">
+            <img src="../img/KNU.jpg" alt="" class="career__logo" />
+            <div class="career__description">
+              <span class="career__name">KYUNGPOOK NATIONAL UNIVERSITY</span>
+              <span class="career__period">2015 Mar - 2022 Feb</span>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Skills -->
-    <section id="skills">
-      <h1>Skills</h1>
-      <h2>Skills & Attributes</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At sequi porro
-        iure facere similique commodi ut harum? Eum ex rem iste ducimus sit
-        commodi, optio itaque quos, iusto, facere tenetur?
-      </p>
-      <div class="skillset">
-        <div class="skillset-left">
-          <div class="skillset__title">Skills</div>
-          <ul class="skillset__list">
-            <li class="skill">
-              <div class="skill__description">
-                <span>HTML</span>
-                <span>99%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style:"99%"></div>
-              </div>
-            </li>
-            <li class="skill">
-              <div class="skill__description">
-                <span>CSS</span>
-                <span>90%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style:"90%"></div>
-              </div>
-            </li>
-            <li class="skill">
-              <div class="skill__description">
-                <span>JavaScript</span>
-                <span>90%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style:"90%"></div>
-              </div>
-            </li>
-            <li class="skill">
-              <div class="skill__description">
-                <span>TypeScript</span>
-                <span>80%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style:"80%"></div>
-              </div>
-            </li>
-            <li class="skill">
-              <div class="skill__description">
-                <span>React</span>
-                <span>88%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style:"88%"></div>
-              </div>
-            </li>
-            <li class="skill">
-              <div class="skill__description">
-                <span>Node.js</span>
-                <span>77%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style:"77%"></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="skillset-right">
-          <div class="tools">
-            <div class="skillset__title">Tools</div>
-            <ul class="tools__list">
-              <li><span>Visual Studio Code</span></li>
-              <li><span>Visual Studio Code</span></li>
-              <li><span>Visual Studio Code</span></li>
-              <li><span>Visual Studio Code</span></li>
-              <li><span>Visual Studio Code</span></li>
-              <li><span>Visual Studio Code</span></li>
-              <li><span>Visual Studio Code</span></li>
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At sequi
+          porro iure facere similique commodi ut harum? Eum ex rem iste ducimus
+          sit commodi, optio itaque quos, iusto, facere tenetur? Lorem ipsum
+          dolor, sit amet consectetur adipisicing elit. Minima sunt, illo
+          possimus ab cupiditate, nisi odio necessitatibus repellat accusantium
+          veritatis cumque. Reprehenderit facilis excepturi velit. Totam aliquam
+          dolore ullam deserunt.
+        </p>
+        <div class="skillset">
+          <div class="skillset-left">
+            <div class="skillset__title">Skills</div>
+            <ul class="skillset__list">
+              <li class="skill">
+                <div class="skill__description">
+                  <span>HTML</span>
+                  <span>99%</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__value" style="width: 99%"></div>
+                </div>
+              </li>
+              <li class="skill">
+                <div class="skill__description">
+                  <span>CSS</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__value" style="width: 90%"></div>
+                </div>
+              </li>
+              <li class="skill">
+                <div class="skill__description">
+                  <span>JavaScript</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__value" style="width: 90%"></div>
+                </div>
+              </li>
+              <li class="skill">
+                <div class="skill__description">
+                  <span>TypeScript</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__value" style="width: 80%"></div>
+                </div>
+              </li>
+              <li class="skill">
+                <div class="skill__description">
+                  <span>React</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__value" style="width: 88%"></div>
+                </div>
+              </li>
+              <li class="skill">
+                <div class="skill__description">
+                  <span>Node.js</span>
+                  <span>77%</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__value" style="width: 77%"></div>
+                </div>
+              </li>
             </ul>
           </div>
-          <div class="etc">
-            <div class="skillset__title">Etc</div>
-            <ul class="etc__list">
-              <li><span>Git</span></li>
-              <li><span>Git</span></li>
-              <li><span>Git</span></li>
-            </ul>
+          <div class="skillset-right">
+            <div class="tools">
+              <div class="skillset__title">Tools</div>
+              <ul class="tools__list">
+                <li><span>Visual Studio Code</span></li>
+                <li><span>Visual Studio Code</span></li>
+                <li><span>Visual Studio Code</span></li>
+                <li><span>Visual Studio Code</span></li>
+                <li><span>Visual Studio Code</span></li>
+                <li><span>Visual Studio Code</span></li>
+                <li><span>Visual Studio Code</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <div class="skillset__title">Etc</div>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+                <li><span>Git</span></li>
+                <li><span>Git</span></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- My Works -->
-    <section id="work">
-      <h1>My work</h1>
-      <h3>Projects</h3>
-      <ul class="work__categories">
-        <li class="category">
-          <button class="category__btn">All
-            <span class="category__count">8</span>
-          </button>
-        </li>
-        <li class="category">
-          <button class="category__btn">Front-end
-            <span class="category__count">3</span>
-          </button>
-        </li>
-        <li class="category">
-          <button class="category__btn">Front-end
-            <span class="category__count">3</span>
-          </button>
-        </li>
-        <li class="category">
-          <button class="category__btn">Front-end
-            <span class="category__count">2</span>
-          </button>
-        </li>
-      </ul>
-      
-      <ul class="work__projects">
-        <li class="project">
-          <a href="#" class="project__link">
-            <img src="../img/logo.png" alt="" class="project__image">
-          </a>
-        </li>
-        <li class="project">
-          <a href="#" class="project__link">
-            <img src="../img/logo.png" alt="" class="project__image">
-          </a>
-        </li>
-        <li class="project">
-          <a href="#" class="project__link">
-            <img src="../img/logo.png" alt="" class="project__image">
-          </a>
-        </li>
-        <li class="project">
-          <a href="#" class="project__link">
-            <img src="../img/logo.png" alt="" class="project__image">
-          </a>
-        </li>
-        <li class="project">
-          <a href="#" class="project__link">
-            <img src="../img/logo.png" alt="" class="project__image">
-          </a>
-        </li>
-        <li class="project">
-          <a href="#" class="project__link">
-            <img src="../img/logo.png" alt="" class="project__image">
-          </a>
-        </li>
-        <li class="project">
-          <a href="#" class="project__link">
-            <img src="../img/logo.png" alt="" class="project__image">
-          </a>
-        </li>
-        <li class="project">
-          <a href="#" class="project__link">
-            <img src="../img/logo.png" alt="" class="project__image">
-          </a>
-        </li>
-      </ul>
+    <section id="work" class="section">
+      <div class="section__container">
+        <h1>My work</h1>
+        <h3>Projects</h3>
+        <ul class="work__categories">
+          <li class="category">
+            <button class="category__btn">
+              All
+              <span class="category__count">8</span>
+            </button>
+          </li>
+          <li class="category">
+            <button class="category__btn">
+              Front-end
+              <span class="category__count">3</span>
+            </button>
+          </li>
+          <li class="category">
+            <button class="category__btn">
+              Front-end
+              <span class="category__count">3</span>
+            </button>
+          </li>
+          <li class="category">
+            <button class="category__btn">
+              Front-end
+              <span class="category__count">2</span>
+            </button>
+          </li>
+        </ul>
+
+        <ul class="work__projects">
+          <li class="project">
+            <a href="#" class="project__link">
+              <img src="../img/logo.png" alt="" class="project__image" />
+              <div class="project__description">
+                <h3>Portfolio Website</h3>
+                <span>HTML, CSS, JavaScript</span>
+              </div>
+            </a>
+          </li>
+          <li class="project">
+            <a href="#" class="project__link">
+              <img src="../img/logo.png" alt="" class="project__image" />
+              <div class="project__description">
+                <h3>Portfolio Website</h3>
+                <span>HTML, CSS, JavaScript</span>
+              </div>
+            </a>
+          </li>
+          <li class="project">
+            <a href="#" class="project__link">
+              <img src="../img/logo.png" alt="" class="project__image" />
+              <div class="project__description">
+                <h3>Portfolio Website</h3>
+                <span>HTML, CSS, JavaScript</span>
+              </div>
+            </a>
+          </li>
+          <li class="project">
+            <a href="#" class="project__link">
+              <img src="../img/logo.png" alt="" class="project__image" />
+              <div class="project__description">
+                <h3>Portfolio Website</h3>
+                <span>HTML, CSS, JavaScript</span>
+              </div>
+            </a>
+          </li>
+          <li class="project">
+            <a href="#" class="project__link">
+              <img src="../img/logo.png" alt="" class="project__image" />
+              <div class="project__description">
+                <h3>Portfolio Website</h3>
+                <span>HTML, CSS, JavaScript</span>
+              </div>
+            </a>
+          </li>
+          <li class="project">
+            <a href="#" class="project__link">
+              <img src="../img/logo.png" alt="" class="project__image" />
+              <div class="project__description">
+                <h3>Portfolio Website</h3>
+                <span>HTML, CSS, JavaScript</span>
+              </div>
+            </a>
+          </li>
+          <li class="project">
+            <a href="#" class="project__link">
+              <img src="../img/logo.png" alt="" class="project__image" />
+              <div class="project__description">
+                <h3>Portfolio Website</h3>
+                <span>HTML, CSS, JavaScript</span>
+              </div>
+            </a>
+          </li>
+          <li class="project">
+            <a href="#" class="project__link">
+              <img src="../img/logo.png" alt="" class="project__image" />
+              <div class="project__description">
+                <h3>Portfolio Website</h3>
+                <span>HTML, CSS, JavaScript</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials">
-      <h1>Testimonials</h1>
-      <h3>See what they say about me</h3>
-      <ul class="testimonials">
-        <li class="testimonial">
-          <img src="../img/obama.jpg" alt="" class="testimonial__avatar">
-          <div class="testimonial__speech-bubble">
-            <p class="speech-bubble__speech">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis aliquid voluptates saepe ratione ipsam, nostrum officia odio impedit ex dolorum error consectetur esse et unde dolor? Id, consequatur quos.</p>
-            <p class="speech-bubble__name"><a href="#">Obama</a>White House</p>
-          </div>
-        </li>
-        <li class="testimonial">
-          <img src="../img/obama.jpg" alt="" class="testimonial__avatar">
-          <div class="testimonial__speech-bubble">
-            <p class="speech-bubble__speech">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis aliquid voluptates saepe ratione ipsam, nostrum officia odio impedit ex dolorum error consectetur esse et unde dolor? Id, consequatur quos.</p>
-            <p class="speech-bubble__name"><a href="#">Obama</a>White House</p>
-          </div>
-        </li>
-      </ul>
+    <section id="testimonials" class="section">
+      <div class="section__container">
+        <h1>Testimonials</h1>
+        <h3>See what they say about me</h3>
+        <ul class="testimonials">
+          <li class="testimonial">
+            <img src="../img/obama.jpg" alt="" class="testimonial__avatar" />
+            <div class="testimonial__speech-bubble">
+              <p class="speech-bubble__speech">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                nobis aliquid voluptates saepe ratione ipsam, nostrum officia
+                odio impedit ex dolorum error consectetur esse et unde dolor?
+                Id, consequatur quos.
+              </p>
+              <p class="speech-bubble__name">
+                <a href="#">Obama</a> / White House
+              </p>
+            </div>
+          </li>
+          <li class="testimonial">
+            <div class="testimonial__speech-bubble">
+              <p class="speech-bubble__speech">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                nobis aliquid voluptates saepe ratione ipsam, nostrum officia
+                odio impedit ex dolorum error consectetur esse et unde dolor?
+                Id, consequatur quos.
+              </p>
+              <p class="speech-bubble__name">
+                <a href="#">Obama</a> / White House
+              </p>
+            </div>
+            <img src="../img/obama.jpg" alt="" class="testimonial__avatar" />
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
       <h1 class="title title--whiten">Let's talk</h1>
       <h2 class="description description--whiten">dikum98@naver.com</h2>
       <ul class="contact__links">
@@ -308,10 +380,12 @@
           <a href="#"><i class="fab fa-github"></i></a>
         </li>
         <li class="contact__link">
-        <a href="#"><i class="fa fa-linkedin-square"></i></a>
+          <a href="#"><i class="fa fa-linkedin-square"></i></a>
         </li>
       </ul>
-      <p class="contasct__rights">2022 dikum98@naver.com - All rights reserved</p>
+      <p class="contact__rights">
+        2022 dikum98@naver.com - All rights reserved
+      </p>
     </section>
   </body>
 </html>
