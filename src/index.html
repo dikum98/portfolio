@@ -48,21 +48,25 @@
           <button class="menu__btn" data-link="#contact">Contact</button>
         </li>
       </ul>
+
+      <!-- Nav Bar Toggle Button -->
       <button class="navbar__toggle-btn"><i class="fas fa-bars"></i></button>
     </nav>
 
     <!-- Home -->
     <section id="home" class="section">
-      <img
-        src="../img/profile.jpg"
-        alt="Han's profile image"
-        class="home__profile"
-      />
-      <h1 class="title title--whiten">Hello, <br />I'm Dream Coder</h1>
-      <h2 class="description description--whiten">
-        프론트엔드 개발자가 되기 위해 공부중입니다.
-      </h2>
-      <button class="home__contact" data-link="#contact">CONTACT ME</button>
+      <div class="home__container">
+        <img
+          src="../img/profile.jpg"
+          alt="Han's profile image"
+          class="home__profile"
+        />
+        <h1 class="title title--whiten">Hello, <br />I'm Dream Coder</h1>
+        <h2 class="description description--whiten">
+          프론트엔드 개발자가 되기 위해 공부중입니다.
+        </h2>
+        <button class="home__contact" data-link="#contact">CONTACT ME</button>
+      </div>
     </section>
 
     <!-- About Me -->
@@ -233,101 +237,109 @@
         <h3>Projects</h3>
         <ul class="work__categories">
           <li class="category">
-            <button class="category__btn">
+            <button class="category__btn" data-type="all">
               All
               <span class="category__count">8</span>
             </button>
           </li>
           <li class="category">
-            <button class="category__btn">
+            <button class="category__btn" data-type="front">
               Front-end
               <span class="category__count">3</span>
             </button>
           </li>
           <li class="category">
-            <button class="category__btn">
-              Front-end
+            <button class="category__btn" data-type="back">
+              Back-end
               <span class="category__count">3</span>
             </button>
           </li>
           <li class="category">
-            <button class="category__btn">
-              Front-end
+            <button class="category__btn" data-type="mobile">
+              Mobile
               <span class="category__count">2</span>
             </button>
           </li>
         </ul>
 
         <ul class="work__projects">
-          <li class="project">
+          <li class="project" data-type="front">
             <a href="#" class="project__link">
-              <img src="../img/logo.png" alt="" class="project__image" />
+              <img
+                src="../img/youtube.png"
+                alt="Youtube"
+                class="project__image"
+              />
               <div class="project__description">
-                <h3>Portfolio Website</h3>
-                <span>HTML, CSS, JavaScript</span>
+                <h3>Youtube Site</h3>
+                <span>Clone coding with HTML, CSS</span>
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="front">
             <a href="#" class="project__link">
-              <img src="../img/logo.png" alt="" class="project__image" />
+              <img
+                src="../img/navbar.png"
+                alt="navbar"
+                class="project__image"
+              />
               <div class="project__description">
-                <h3>Portfolio Website</h3>
-                <span>HTML, CSS, JavaScript</span>
+                <h3>Responsive Navbar</h3>
+                <span>HTML, CSS with media query</span>
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="front">
             <a href="#" class="project__link">
-              <img src="../img/logo.png" alt="" class="project__image" />
+              <img src="../img/game.png" alt="game" class="project__image" />
               <div class="project__description">
-                <h3>Portfolio Website</h3>
-                <span>HTML, CSS, JavaScript</span>
+                <h3>Shopping mall game</h3>
+                <span>HTML, CSS, JavaScript, Json</span>
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="back">
             <a href="#" class="project__link">
-              <img src="../img/logo.png" alt="" class="project__image" />
+              <img src="../img/game.png" alt="" class="project__image" />
               <div class="project__description">
-                <h3>Portfolio Website</h3>
-                <span>HTML, CSS, JavaScript</span>
+                <h3>Project</h3>
+                <span>Explanation</span>
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="back">
             <a href="#" class="project__link">
-              <img src="../img/logo.png" alt="" class="project__image" />
+              <img src="../img/game.png" alt="" class="project__image" />
               <div class="project__description">
-                <h3>Portfolio Website</h3>
-                <span>HTML, CSS, JavaScript</span>
+                <h3>Project</h3>
+                <span>Explanation</span>
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="mobile">
             <a href="#" class="project__link">
-              <img src="../img/logo.png" alt="" class="project__image" />
+              <img src="../img/game.png" alt="" class="project__image" />
               <div class="project__description">
-                <h3>Portfolio Website</h3>
-                <span>HTML, CSS, JavaScript</span>
+                <h3>Project</h3>
+                <span>Explanation</span>
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="mobile">
             <a href="#" class="project__link">
-              <img src="../img/logo.png" alt="" class="project__image" />
+              <img src="../img/game.png" alt="" class="project__image" />
               <div class="project__description">
-                <h3>Portfolio Website</h3>
-                <span>HTML, CSS, JavaScript</span>
+                <h3>Project</h3>
+                <span>Explanation</span>
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="mobile">
             <a href="#" class="project__link">
-              <img src="../img/logo.png" alt="" class="project__image" />
+              <img src="../img/game.png" alt="" class="project__image" />
               <div class="project__description">
-                <h3>Portfolio Website</h3>
-                <span>HTML, CSS, JavaScript</span>
+                <h3>Project</h3>
+                <span>Explanation</span>
               </div>
             </a>
           </li>
@@ -389,5 +401,10 @@
         2022 dikum98@naver.com - All rights reserved
       </p>
     </section>
+
+    <!-- Arrow Up -->
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
   </body>
 </html>
