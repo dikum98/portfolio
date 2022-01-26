@@ -617,4 +617,27 @@ p {
   .project {
     flex-grow: 1;
   }
+
+  .work__categories {
+    flex-direction: column;
+  }
+
+  .category__btn {
+    width: 100%;
+    margin: 4px 0;
+  }
+
+  /* Testimonials */
+  .testimonial {
+    flex-direction: column;
+  }
+
+  .testimonial__avatar:nth-child(even),
+  .testimonial__avatar:nth-child(odd) {
+    margin: 16px 0;
+  }
+
+  .testimonial__avatar {
+    order: -1;
+  }
 }
