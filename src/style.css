@@ -261,7 +261,6 @@ p {
 .career__logo {
   width: 80px;
   height: 80px;
-  margin: 0 16px -12px -34px;
 }
 
 .career__description {
@@ -278,7 +277,6 @@ p {
 /* Skills */
 #skills {
   background: var(--color-yellow);
-  padding: 80px;
 }
 
 #skills p {
@@ -289,7 +287,6 @@ p {
 .skillset {
   display: flex;
   justify-content: center;
-  width: 1050px;
   padding-bottom: 80px;
   margin: auto;
 }
@@ -352,6 +349,8 @@ p {
 .work__categories {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
 }
 
 .category__btn {
@@ -361,7 +360,6 @@ p {
   border: 1px solid var(--color-dark-grey);
   border-radius: var(--size-border-radius);
   padding: 8px 40px;
-  margin: 30px 0;
 }
 
 .category__btn.active:hover .category__count {
@@ -568,6 +566,15 @@ p {
 
 /* Responsive ver */
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
   /* Nav Bar */
   #navbar {
     flex-direction: column;
@@ -586,6 +593,10 @@ p {
   }
 
   /* Home */
+  .section {
+    padding: 16px;
+  }
+
   .home__profile {
     margin-top: 300px;
   }
