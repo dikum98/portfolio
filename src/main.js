@@ -24,6 +24,7 @@ contact.addEventListener("click", () => {
 // 특정 페이지로 이동하고, 클릭한 메뉴를 활성화
 function menuHandler(event) {
   const link = event.target.dataset.link;
+  navbarMenu.classList.remove("active");
   scrollToPage(link);
   menuItem.forEach((menu) => {
     menu.firstElementChild.classList.remove("active");
@@ -85,4 +86,21 @@ categories.addEventListener("click", (event) => {
     });
     projectContainer.classList.remove("anim-out");
   }, 300);
+});
+
+// work category 클릭된 버튼 활성화
+const categoryBtn = document.querySelectorAll(".category__btn");
+categories.addEventListener("click", (event) => {
+  if (
+    event.target.classList.contains("category") ||
+    !event.target.firstElementChild
+  )
+    return;
+  categoryBtn.forEach((btn) => {
+    btn.classList.remove("active");
+    btn.firstElementChild.classList.remove("active");
+    event.target.classList.add("active");
+    event.target.firstElementChild.classList.add("active");
+    console.log(event.target);
+  });
 });
