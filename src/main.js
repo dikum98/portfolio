@@ -19,6 +19,13 @@ navbar.addEventListener("click", (event) => {
   scrollToPage(page);
 });
 
+// navbar menu toggle
+const navbarMenu = document.querySelector(".navbar__menu");
+const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
+navbarToggleBtn.addEventListener("click", () => {
+  navbarMenu.classList.toggle("disappear");
+});
+
 // contact me 버튼 클릭시 contact 페이지로 이동
 const homeContactBtn = document.querySelector(".home__contact");
 homeContactBtn.addEventListener("click", () => {
@@ -26,9 +33,9 @@ homeContactBtn.addEventListener("click", () => {
 });
 
 // work category filtering
-const workCategories = document.querySelector(".works__categories");
+const categoryContainer = document.querySelector(".works__categories");
 const projectsContainer = document.querySelector(".works__projects");
-workCategories.addEventListener("click", (event) => {
+categoryContainer.addEventListener("click", (event) => {
   const categoryType =
     event.target.dataset.type || event.target.parentNode.dataset.type;
   const projects = document.querySelectorAll(".project");
@@ -46,6 +53,13 @@ workCategories.addEventListener("click", (event) => {
     });
     projectsContainer.classList.remove("anim-out");
   }, 300);
+
+  // work category 클릭된 버튼 활성화
+  const workCategories = document.querySelectorAll(".category");
+  workCategories.forEach((category) => {
+    category.classList.remove("clicked");
+  });
+  event.target.classList.add("clicked");
 });
 
 // arrow-up 버튼 클릭시 맨위로 이동
