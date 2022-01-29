@@ -20,209 +20,186 @@
     <script src="main.js" defer></script>
   </head>
   <body>
-    <!-- Nav Bar -->
-    <nav id="navbar">
+    <!-- Navbar -->
+    <header id="navbar">
       <div class="navbar__logo">
         <i class="fas fa-fire-alt logo"></i>
-        <a href="#">Han</a>
+        <a class="logo__name" href="#">Han</a>
       </div>
       <ul class="navbar__menu">
-        <li class="menu__item">
-          <button class="menu__btn" data-link="#home">Home</button>
-        </li>
-        <li class="menu__item">
-          <button class="menu__btn" data-link="#about">About</button>
-        </li>
-        <li class="menu__item">
-          <button class="menu__btn" data-link="#skills">Skills</button>
-        </li>
-        <li class="menu__item">
-          <button class="menu__btn" data-link="#work">My work</button>
-        </li>
-        <li class="menu__item">
-          <button class="menu__btn" data-link="#testimonials">
-            Testimonial
-          </button>
-        </li>
-        <li class="menu__item">
-          <button class="menu__btn" data-link="#contact">Contact</button>
-        </li>
+        <li class="menu">Home</li>
+        <li class="menu">About</li>
+        <li class="menu">Skills</li>
+        <li class="menu">My Work</li>
+        <li class="menu">Testimonial</li>
+        <li class="menu">Contact</li>
       </ul>
-
-      <!-- Nav Bar Toggle Button -->
-      <button class="navbar__toggle-btn"><i class="fas fa-bars"></i></button>
-    </nav>
+      <!-- Navbar Toggle Button-->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </header>
 
     <!-- Home -->
     <section id="home" class="section">
-      <div class="home__container">
-        <img
-          src="../img/profile.jpg"
-          alt="Han's profile image"
-          class="home__profile"
-        />
-        <h1 class="title title--whiten">Hello, <br />I'm Dream Coder</h1>
-        <h2 class="description description--whiten">
-          프론트엔드 개발자가 되기 위해 공부중입니다.
+      <div class="section__container">
+        <img src="../img/profile.jpg" alt="home avatar" class="home__avatar" />
+        <h1 class="home__title">
+          Hello,<br />
+          I'm Front-end Developer
+        </h1>
+        <h2 class="home__description">
+          포트폴리오 사이트를 만드는 연습중입니다.
         </h2>
-        <button class="home__contact" data-link="#contact">CONTACT ME</button>
+        <button class="home__contact">Contact Me</button>
       </div>
     </section>
 
-    <!-- About Me -->
+    <!-- About me -->
     <section id="about" class="section">
       <div class="section__container">
-        <h1>About me</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          doloribus recusandae, temporibus, eos ipsum, laboriosam non corporis
-          totam suscipit maxime debitis ut sequi hic dolorem ullam omnis! Ex,
-          nemo facilis? Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Deserunt aut ipsam doloremque quos neque odio eligendi eveniet?
-          Enim optio possimus officia repellendus nostrum repellat magni neque
-          delectus, ipsa, corporis voluptate.
+        <h1 class="about__title">About me</h1>
+        <p class="about__description">
+          안녕하세요! HTML, CSS, JavaScript를 연습하기 위한 가상의 포트폴리오
+          웹사이트 입니다. 세부사항은 실제와 다를 수 있습니다. 세부사항은 실제와
+          다를 수 있습니다.
         </p>
-        <ul class="about__majors">
-          <li class="major">
-            <div class="major__img">
+        <div class="about__majors">
+          <div class="major">
+            <div class="major__icon">
               <i class="fab fa-html5"></i>
             </div>
             <h2 class="major__title">Front-end</h2>
             <h3 class="major__description">
-              HTML, CSS, JavaScript, TypeScript, React, Vue, Web Apis
+              HTML, CSS, JavaScript, TypeScript, React, Vue, Web APIs
             </h3>
-          </li>
-          <li class="major">
-            <div class="major__img">
-              <i class="fab fa-html5"></i>
+          </div>
+          <div class="major">
+            <div class="major__icon">
+              <i class="fas fa-mobile"></i>
             </div>
             <h2 class="major__title">Front-end</h2>
             <h3 class="major__description">
-              HTML, CSS, JavaScript, TypeScript, React, Vue, Web Apis
+              HTML, CSS, JavaScript, TypeScript, React, Vue, Web APIs
             </h3>
-          </li>
-          <li class="major">
-            <div class="major__img">
-              <i class="fab fa-html5"></i>
+          </div>
+          <div class="major">
+            <div class="major__icon">
+              <i class="fas fa-server"></i>
             </div>
             <h2 class="major__title">Front-end</h2>
             <h3 class="major__description">
-              HTML, CSS, JavaScript, TypeScript, React, Vue, Web Apis
+              HTML, CSS, JavaScript, TypeScript, React, Vue, Web APIs
             </h3>
-          </li>
-        </ul>
-        <ul class="about__career">
-          <li class="career">
-            <img src="../img/KNU.jpg" alt="" class="career__logo" />
-            <div class="career__description">
-              <span class="career__name">KYUNGPOOK NATIONAL UNIVERSITY</span>
-              <span class="career__period">2015 Mar - 2022 Feb</span>
-            </div>
-          </li>
-          <li class="career">
-            <img src="../img/KNU.jpg" alt="" class="career__logo" />
-            <div class="career__description">
-              <span class="career__name">KYUNGPOOK NATIONAL UNIVERSITY</span>
-              <span class="career__period">2015 Mar - 2022 Feb</span>
-            </div>
-          </li>
-        </ul>
+          </div>
+        </div>
+        <div class="about__career">
+          <img src="../img/KNU.jpg" alt="career image" class="career__img" />
+          <div class="career__description">
+            <h3 class="career__title">KYUNGPOOK NATIONAL UNIVERSITY</h3>
+            <p class="career__period">2015 Mar - 2022 Feb</p>
+          </div>
+        </div>
+        <div class="about__career">
+          <img src="../img/KNU.jpg" alt="career image" class="career__img" />
+          <div class="career__description">
+            <h3 class="career__title">KYUNGPOOK NATIONAL UNIVERSITY</h3>
+            <p class="career__period">2015 Mar - 2022 Feb</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Skills -->
     <section id="skills" class="section">
       <div class="section__container">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. At sequi
-          porro iure facere similique commodi ut harum? Eum ex rem iste ducimus
-          sit commodi, optio itaque quos, iusto, facere tenetur? Lorem ipsum
-          dolor, sit amet consectetur adipisicing elit. Minima sunt, illo
-          possimus ab cupiditate, nisi odio necessitatibus repellat accusantium
-          veritatis cumque. Reprehenderit facilis excepturi velit. Totam aliquam
-          dolore ullam deserunt.
-        </p>
+        <h1 class="skills__title">Skills</h1>
+        <h2 class="skills__subtitle">Skills & Attributes</h2>
+        <h3 class="skills__description">
+          Experience with all phases of the software life-cycle. Passion for
+          learning new technologies. Capable of working within a team
+          environment and independently. Ability to plan and time schedule, work
+          under strict time pressure and adapt quickly when needed.
+        </h3>
         <div class="skillset">
-          <div class="skillset-left">
-            <div class="skillset__title">Skills</div>
-            <ul class="skillset__list">
-              <li class="skill">
-                <div class="skill__description">
-                  <span>HTML</span>
-                  <span>99%</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value" style="width: 99%"></div>
-                </div>
-              </li>
-              <li class="skill">
-                <div class="skill__description">
-                  <span>CSS</span>
-                  <span>90%</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value" style="width: 90%"></div>
-                </div>
-              </li>
-              <li class="skill">
-                <div class="skill__description">
-                  <span>JavaScript</span>
-                  <span>90%</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value" style="width: 90%"></div>
-                </div>
-              </li>
-              <li class="skill">
-                <div class="skill__description">
-                  <span>TypeScript</span>
-                  <span>80%</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value" style="width: 80%"></div>
-                </div>
-              </li>
-              <li class="skill">
-                <div class="skill__description">
-                  <span>React</span>
-                  <span>88%</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value" style="width: 88%"></div>
-                </div>
-              </li>
-              <li class="skill">
-                <div class="skill__description">
-                  <span>Node.js</span>
-                  <span>77%</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value" style="width: 77%"></div>
-                </div>
-              </li>
-            </ul>
+          <div class="skillset__left">
+            <div class="skills">
+              <h3 class="skillset__title">Skills</h3>
+              <ul class="skill__list">
+                <li class="skill">
+                  <div class="skill__description">
+                    <span class="skill__name">HTML</span>
+                    <span class="skill__percentage">99%</span>
+                  </div>
+                  <div class="skill__bar">
+                    <div class="skill__value" style="width: 99%"></div>
+                  </div>
+                </li>
+                <li class="skill">
+                  <div class="skill__description">
+                    <span class="skill__name">CSS</span>
+                    <span class="skill__percentage">90%</span>
+                  </div>
+                  <div class="skill__bar">
+                    <div class="skill__value" style="width: 90%"></div>
+                  </div>
+                </li>
+                <li class="skill">
+                  <div class="skill__description">
+                    <span class="skill__name">JavaScript</span>
+                    <span class="skill__percentage">90%</span>
+                  </div>
+                  <div class="skill__bar">
+                    <div class="skill__value" style="width: 90%"></div>
+                  </div>
+                </li>
+                <li class="skill">
+                  <div class="skill__description">
+                    <span class="skill__name">TypeScript</span>
+                    <span class="skill__percentage">80%</span>
+                  </div>
+                  <div class="skill__bar">
+                    <div class="skill__value" style="width: 80%"></div>
+                  </div>
+                </li>
+                <li class="skill">
+                  <div class="skill__description">
+                    <span class="skill__name">React</span>
+                    <span class="skill__percentage">88%</span>
+                  </div>
+                  <div class="skill__bar">
+                    <div class="skill__value" style="width: 88%"></div>
+                  </div>
+                </li>
+                <li class="skill">
+                  <div class="skill__description">
+                    <span class="skill__name">NodeJS</span>
+                    <span class="skill__percentage">77%</span>
+                  </div>
+                  <div class="skill__bar">
+                    <div class="skill__value" style="width: 77%"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="skillset-right">
+          <div class="skillset__right">
             <div class="tools">
-              <div class="skillset__title">Tools</div>
-              <ul class="tools__list">
-                <li><span>Visual Studio Code</span></li>
-                <li><span>Visual Studio Code</span></li>
-                <li><span>Visual Studio Code</span></li>
-                <li><span>Visual Studio Code</span></li>
-                <li><span>Visual Studio Code</span></li>
-                <li><span>Visual Studio Code</span></li>
-                <li><span>Visual Studio Code</span></li>
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools_list">
+                <li>Visual Studio Code</li>
+                <li>Visual Studio Code</li>
+                <li>Visual Studio Code</li>
+                <li>Visual Studio Code</li>
+                <li>Visual Studio Code</li>
               </ul>
             </div>
             <div class="etc">
-              <div class="skillset__title">Etc</div>
+              <h3 class="skillset__title">Etc</h3>
               <ul class="etc__list">
-                <li><span>Git</span></li>
-                <li><span>Git</span></li>
-                <li><span>Git</span></li>
+                <li>Git, Github</li>
+                <li>Git, Github</li>
+                <li>Git, Github</li>
               </ul>
             </div>
           </div>
@@ -230,116 +207,143 @@
       </div>
     </section>
 
-    <!-- My Works -->
-    <section id="work" class="section">
+    <!-- My work -->
+    <section id="works" class="section">
       <div class="section__container">
-        <h1>My work</h1>
-        <h3>Projects</h3>
-        <ul class="work__categories">
-          <li class="category">
-            <button class="category__btn" data-type="all">
-              All
-              <span class="category__count">8</span>
-            </button>
-          </li>
-          <li class="category">
-            <button class="category__btn" data-type="front">
-              Front-end
-              <span class="category__count">3</span>
-            </button>
-          </li>
-          <li class="category">
-            <button class="category__btn" data-type="back">
-              Back-end
-              <span class="category__count">3</span>
-            </button>
-          </li>
-          <li class="category">
-            <button class="category__btn" data-type="mobile">
-              Mobile
-              <span class="category__count">2</span>
-            </button>
-          </li>
-        </ul>
-
-        <ul class="work__projects">
-          <li class="project" data-type="front">
-            <a href="#" class="project__link">
+        <h1 class="works__title">My work</h1>
+        <h3 class="works__description">Projects</h3>
+        <div class="works__categories">
+          <button class="category" data-type="all">
+            All<span class="category__count">8</span>
+          </button>
+          <button class="category" data-type="front">
+            Front-end<span class="category__count">3</span>
+          </button>
+          <button class="category" data-type="back">
+            Back-end<span class="category__count">3</span>
+          </button>
+          <button class="category" data-type="mobile">
+            Mobile<span class="category__count">2</span>
+          </button>
+        </div>
+        <ul class="works__projects">
+          <li>
+            <a href="#" class="project" data-type="front">
               <img
                 src="../img/youtube.png"
-                alt="Youtube"
-                class="project__image"
+                alt="project image"
+                class="project__img"
               />
               <div class="project__description">
-                <h3>Youtube Site</h3>
-                <span>Clone coding with HTML, CSS</span>
+                <span class="project__title">Youtube Site</span>
+                <span class="project__explanation"
+                  >Clone coding with HTML, CSS</span
+                >
               </div>
             </a>
           </li>
-          <li class="project" data-type="front">
-            <a href="#" class="project__link">
+          <li>
+            <a href="#" class="project" data-type="front">
               <img
                 src="../img/navbar.png"
-                alt="navbar"
-                class="project__image"
+                alt="project image"
+                class="project__img"
               />
               <div class="project__description">
-                <h3>Responsive Navbar</h3>
-                <span>HTML, CSS with media query</span>
+                <span class="project__title">Responsive Navbar</span>
+                <span class="project__explanation"
+                  >HTML, CSS with media query</span
+                >
               </div>
             </a>
           </li>
-          <li class="project" data-type="front">
-            <a href="#" class="project__link">
-              <img src="../img/game.png" alt="game" class="project__image" />
+          <li>
+            <a href="#" class="project" data-type="front">
+              <img
+                src="../img/game.png"
+                alt="project image"
+                class="project__img"
+              />
               <div class="project__description">
-                <h3>Shopping mall game</h3>
-                <span>HTML, CSS, JavaScript, Json</span>
+                <span class="project__title">Shopping mall game</span>
+                <span class="project__explanation"
+                  >HTML, CSS, JavaScript, json</span
+                >
               </div>
             </a>
           </li>
-          <li class="project" data-type="back">
-            <a href="#" class="project__link">
-              <img src="../img/game.png" alt="" class="project__image" />
+          <li>
+            <a href="#" class="project" data-type="front">
+              <img
+                src="../img/game.png"
+                alt="project image"
+                class="project__img"
+              />
               <div class="project__description">
-                <h3>Project</h3>
-                <span>Explanation</span>
+                <span class="project__title">Shopping mall game</span>
+                <span class="project__explanation"
+                  >HTML, CSS, JavaScript, json</span
+                >
               </div>
             </a>
           </li>
-          <li class="project" data-type="back">
-            <a href="#" class="project__link">
-              <img src="../img/game.png" alt="" class="project__image" />
+          <li>
+            <a href="#" class="project" data-type="front">
+              <img
+                src="../img/game.png"
+                alt="project image"
+                class="project__img"
+              />
               <div class="project__description">
-                <h3>Project</h3>
-                <span>Explanation</span>
+                <span class="project__title">Shopping mall game</span>
+                <span class="project__explanation"
+                  >HTML, CSS, JavaScript, json</span
+                >
               </div>
             </a>
           </li>
-          <li class="project" data-type="mobile">
-            <a href="#" class="project__link">
-              <img src="../img/game.png" alt="" class="project__image" />
+          <li>
+            <a href="#" class="project" data-type="front">
+              <img
+                src="../img/game.png"
+                alt="project image"
+                class="project__img"
+              />
               <div class="project__description">
-                <h3>Project</h3>
-                <span>Explanation</span>
+                <span class="project__title">Shopping mall game</span>
+                <span class="project__explanation"
+                  >HTML, CSS, JavaScript, json</span
+                >
               </div>
             </a>
           </li>
-          <li class="project" data-type="mobile">
-            <a href="#" class="project__link">
-              <img src="../img/game.png" alt="" class="project__image" />
+          <li>
+            <a href="#" class="project" data-type="front">
+              <img
+                src="../img/game.png"
+                alt="project image"
+                class="project__img"
+              />
               <div class="project__description">
-                <h3>Project</h3>
-                <span>Explanation</span>
+                <span class="project__title">Shopping mall game</span>
+                <span class="project__explanation"
+                  >HTML, CSS, JavaScript, json</span
+                >
               </div>
             </a>
           </li>
-          <li class="project" data-type="mobile">
-            <a href="#" class="project__link">
-              <img src="../img/game.png" alt="" class="project__image" />
+          <li>
+            <a href="#" class="project" data-type="front">
+              <img
+                src="../img/game.png"
+                alt="project image"
+                class="project__img"
+              />
               <div class="project__description">
-                <h3>Project</h3>
-                <span>Explanation</span>
+                <span class="project__title">Shopping mall game</span>
+                <span class="project__explanation"
+                  >HTML, CSS, JavaScript, json</span
+                >
               </div>
             </a>
           </li>
@@ -350,60 +354,68 @@
     <!-- Testimonials -->
     <section id="testimonials" class="section">
       <div class="section__container">
-        <h1>Testimonials</h1>
-        <h3>See what they say about me</h3>
-        <ul class="testimonials">
-          <li class="testimonial">
-            <img src="../img/obama.jpg" alt="" class="testimonial__avatar" />
-            <div class="testimonial__speech-bubble">
-              <p class="speech-bubble__speech">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                nobis aliquid voluptates saepe ratione ipsam, nostrum officia
-                odio impedit ex dolorum error consectetur esse et unde dolor?
-                Id, consequatur quos.
-              </p>
-              <p class="speech-bubble__name">
-                <a href="#">Obama</a> / White House
-              </p>
-            </div>
-          </li>
-          <li class="testimonial">
-            <div class="testimonial__speech-bubble">
-              <p class="speech-bubble__speech">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                nobis aliquid voluptates saepe ratione ipsam, nostrum officia
-                odio impedit ex dolorum error consectetur esse et unde dolor?
-                Id, consequatur quos.
-              </p>
-              <p class="speech-bubble__name">
-                <a href="#">Obama</a> / White House
-              </p>
-            </div>
-            <img src="../img/obama.jpg" alt="" class="testimonial__avatar" />
-          </li>
-        </ul>
+        <h1 class="testimonials__title">Testimonials</h1>
+        <h3 class="testimonials__description">See what they say about me</h3>
+        <div class="testimonial">
+          <img
+            src="../img/obama.jpg"
+            alt="tetimonial avatar"
+            class="testimonial__avatar"
+          />
+          <div class="testimonial__speech-bubble">
+            <p class="speech-bubble__comment">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae,
+              voluptates. Mollitia veniam maiores totam accusamus? Consequatur,
+              quae excepturi, quos earum reprehenderit temporibus nobis
+              cupiditate eius ea tempora ipsa quidem incidunt!
+            </p>
+            <p class="speech-bubble__where">
+              <a href="" class="speech-bubble__who">Obama</a>
+              / White House
+            </p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__speech-bubble">
+            <p class="speech-bubble__comment">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              minus magnam, natus necessitatibus ad dolor nobis laborum,
+              asperiores deserunt consequatur earum quaerat vitae unde
+              aspernatur officiis inventore pariatur nulla hic.
+            </p>
+            <p class="speech-bubble__where">
+              <a href="" class="speech-bubble__who">Obama</a>
+              / White House
+            </p>
+          </div>
+          <img
+            src="../img/obama.jpg"
+            alt="tetimonial avatar"
+            class="testimonial__avatar"
+          />
+        </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section">
-      <h1 class="title title--whiten">Let's talk</h1>
-      <h2 class="description description--whiten">dikum98@naver.com</h2>
-      <ul class="contact__links">
-        <li class="contact__link">
-          <a href="#"><i class="fab fa-github"></i></a>
-        </li>
-        <li class="contact__link">
-          <a href="#"><i class="fa fa-linkedin-square"></i></a>
-        </li>
-      </ul>
-      <p class="contact__rights">
-        2022 dikum98@naver.com - All rights reserved
-      </p>
-    </section>
+    <footer id="contact" class="section">
+      <div class="section__container">
+        <h1 class="contact__title">Let's talk</h1>
+        <h2 class="contact__email">dikum98@naver.com</h2>
+        <div class="contact__links">
+          <a class="link" href="#">
+            <i class="fab fa-github"></i>
+          </a>
+          <a class="link" href="#">
+            <i class="fa fa-linkedin-square"></i>
+          </a>
+        </div>
+        <h3 class="contact__rights">2022 Han - All rights reserved</h3>
+      </div>
+    </footer>
 
     <!-- Arrow Up -->
-    <button class="arrow-up">
+    <button id="arrow-up">
       <i class="fas fa-arrow-up"></i>
     </button>
   </body>
